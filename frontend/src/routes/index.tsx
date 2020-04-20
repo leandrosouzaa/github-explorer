@@ -4,9 +4,9 @@ import Dashboard from '../pages/Dashboard';
 import Repository from '../pages/Repository';
 
 const Routes: React.FC = () => (
-  <Switch>
+   <Switch>
     <Route path="/" component={Dashboard} />
-  </Switch>
+   </Switch>
 );
 
 export default Routes;
