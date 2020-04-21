@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouteMatch, Link } from 'react-router-dom';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
@@ -11,8 +11,41 @@ interface RepositoryParams {
    repository: string;
 }
 
+interface Repository {
+   full_name: string;
+   description: string;
+   stargazers_count: number;
+   forks_count: number;
+   open_issues_count: number;
+   owner: {
+      login: string;
+      avatar_url: string;
+   };
+}
+
+interface Issue {
+   id: number;
+   title: string;
+   user: {
+      login: string;
+   };
+   html_url: string;
+}
+
 const Repository: React.FC = () => {
    const { params } = useRouteMatch<RepositoryParams>();
+   const [repository, setRepository] = useState<Repository | null>(null);
+   const [issues, setIssues] = useState<Issue[]>([]);
+
+   useEffect(() => {
+      api.get(`repos/${params.repository}`).then((r) => {
+         setRepository(r.data);
+      });
+
+      api.get(`repos/${params.repository}/issues`).then((r) => {
+         setIssues(r.data);
+      });
+   }, []); // eslint-disable-line
 
    return (
       <>
@@ -23,41 +56,45 @@ const Repository: React.FC = () => {
                Voltar
             </Link>
          </Header>
-         <RepositoryInfo>
-            <header>
-               <img
-                  src="https://avatars0.githubusercontent.com/u/51727533?s=460&u=db66dcd045f5e01193f7e162c4bbc193886ae348&v=4"
-                  alt="leandrosouzaa"
-               />
-               <div>
-                  <strong>leandrosouzaa/habbap</strong>
-                  <p>descrição do repositório.</p>
-               </div>
-            </header>
-            <ul>
-               <li>
-                  <strong>10000</strong>
-                  <span>Stars</span>
-               </li>
-               <li>
-                  <strong>10000</strong>
-                  <span>Forks</span>
-               </li>
-               <li>
-                  <strong>10000</strong>
-                  <span>Issues abertas</span>
-               </li>
-            </ul>
-         </RepositoryInfo>
+         {repository && (
+            <RepositoryInfo>
+               <header>
+                  <img
+                     src={repository.owner.avatar_url}
+                     alt={repository.owner.login}
+                  />
+                  <div>
+                     <strong>{repository.full_name}</strong>
+                     <p>{repository.description}</p>
+                  </div>
+               </header>
+               <ul>
+                  <li>
+                     <strong>{repository.stargazers_count}</strong>
+                     <span>Stars</span>
+                  </li>
+                  <li>
+                     <strong>{repository.forks_count}</strong>
+                     <span>Forks</span>
+                  </li>
+                  <li>
+                     <strong>{repository.open_issues_count}</strong>
+                     <span>Issues abertas</span>
+                  </li>
+               </ul>
+            </RepositoryInfo>
+         )}
          <Issues>
-            <Link key={1} to="/repository/">
-               <div>
-                  <strong>asdasdf</strong>
-                  <p>asdadsads</p>
-               </div>
+            {issues.map((i) => (
+               <a key={i.id} href={i.html_url}>
+                  <div>
+                     <strong>{i.title}</strong>
+                     <p>{i.user.login}</p>
+                  </div>
 
-               <FiChevronRight size={20} />
-            </Link>
+                  <FiChevronRight size={20} />
+               </a>
+            ))}
          </Issues>
       </>
    );
