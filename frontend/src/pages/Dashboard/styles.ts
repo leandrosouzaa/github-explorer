@@ -12,6 +12,9 @@ export const Title = styled.h1`
 
    margin-top: 80px;
    max-width: 450px;
+   @media (max-width: 620px) {
+      text-align: center;
+   }
 `;
 
 export const Form = styled.form<FormProps>`
@@ -54,6 +57,30 @@ export const Form = styled.form<FormProps>`
 
       &:hover {
          background: ${shade(0.2, '#04D361')};
+      }
+   }
+
+   @media (max-width: 620px) {
+      flex-direction: column;
+      input {
+         flex: none;
+         border-radius: 5px 5px 5px 5px;
+         height: 60px;
+         border: 2px solid #fff;
+
+         ${(props) =>
+            props.hasError &&
+            css`
+               border-color: #c53030;
+               animation: shake 0.82s;
+            `};
+      }
+      button {
+         flex: none;
+         border-radius: 5px 5px 5px 5px;
+         height: 60px;
+         margin-top: 10px;
+         width: 100%;
       }
    }
 `;
