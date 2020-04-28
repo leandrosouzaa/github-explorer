@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Aircnc" title="#delicinha" src="frontend/src/assets/logo.svg" width="450px" />
+  <img alt="Aircnc" title="#logo" src="frontend/src/assets/logo.svg" width="450px" />
 </h1>
 <h4 align="center">:compass: Discover new Horizons :compass:</h4>
 
@@ -29,7 +29,7 @@
 </p>                                                                                                                      
 
 <p align="center">
-    <img alt="Aircnc" title="#delicinha" width="95%" src="https://i.imgur.com/PfozYGC.pngg" width="450px" />
+    <img alt="printscreen" title="#app" width="95%" src="https://i.imgur.com/PfozYGC.pngg" width="450px" />
 </p> 
 
 ## 💻 Projeto 
@@ -60,7 +60,22 @@ Foram utilizadas as seguintes dependências para o desenvolvimento do projeto
 * Com o Git já configurado, execute o seguinte comando ```git clone https://github.com/leandrosouzaa/github-explorer.git```
 * Aguarde o término da execução deste comando. Após a clonagem será criada uma pasta chamada github-explorer contendo a aplicação.
 * Antes de executar o projeto é necessário instalar as dependências contidas no arquivo ```package.json```, para isso, acesse a pasta frontend dentro da raíz do projeto através do seguinte comando ```cd github-explorer/frontend``` e em seguida execute ```yarn add``` para instalar as dependências.
-* Após a conclusão da instalação, execute oscript de inicio através do comando ```yarn start```.
+* Após a conclusão da instalação, execute o script de inicio através do comando ```yarn start```.
 * Será iniciado uma nova aba em seu navegador no endereço [http://localhost:3000](http://localhost:3000). Caso não abra, digite o endereço citado em seu navegador e aguarde.
-* Para acessar o mobile da aplicação é necessário estar conenctado na mesma rede em que seu servidor local está rodando. Tendo isso em vista, descubra o IP local de sua máquina na rede e digite no navegador do seu celular o endereço de seu computador seguido pela porta utilizada pelo projeto. Ex: Se o meu IP local é 192.178.0.106, terei que digitar o o seguinte endereço em meu celular: [192.168.0.106:3000](192.168.0.106).
+* Para acessar o mobile da aplicação é necessário estar conenctado na mesma rede em que seu servidor local está rodando. Tendo isso em vista, descubra o IP local de sua máquina na rede e digite no navegador do seu celular o endereço de seu computador seguido pela porta utilizada pelo projeto. Ex: Se o meu IP local é 192.178.0.106, terei que digitar o o seguinte endereço em meu celular: [http://192.168.0.106:3000](http://192.168.0.106).
 * Caso tenha alguma dúvida, sinta-se confortável para abrir uma [issue no repositório](https://github.com/leandrosouzaa/github-explorer/issues/new).
+
+## 👨‍💻 Desenvolvedor
+ <table>
+  <tr>
+    <td>
+      <img height="100px" src="https://avatars0.githubusercontent.com/u/51727533?s=460&u=db66dcd045f5e01193f7e162c4bbc193886ae348&v=4" />
+    </td>
+    <td>
+      <b>Leandro Souza</b> <br />
+      <span>Futuro Cientista da Computação pelo Instituto Federal<br /> de Educação, Ciência e Tecnologia de São Paulo.</span><br />
+      <a href="https://github.com/leandrosouzaa">@leandrosouzaa</a>
+    </td>
+   </tr>
+ </table>
+
