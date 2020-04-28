@@ -12,10 +12,10 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/leandrosouzaa/github-explorer.svg">
   </a>
 
-  <a href="https://github.com/leandrosouzaa/github-explorer/">
-    <img alt="Repository" issues" src="https://img.shields.io/github/stars/leandrosouzaa/github-explorer?style=social"                       </a>
-
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen">
+  
+  <a href="https://github.com/leandrosouzaa/github-explorer/stargazers">
+    <img alt="Repository" issues" src="https://img.shields.io/github/stars/leandrosouzaa/github-explorer?style=social"                       </a>
 </p>
 
 <h1 align="center">
