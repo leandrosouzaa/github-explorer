@@ -69,7 +69,7 @@ Foram utilizadas as seguintes dependências para o desenvolvimento do projeto
  <table>
   <tr>
     <td>
-      <img height="100px" src="https://avatars0.githubusercontent.com/u/51727533?s=460&u=db66dcd045f5e01193f7e162c4bbc193886ae348&v=4" />
+      <img width="25%" src="https://avatars0.githubusercontent.com/u/51727533?s=460&u=db66dcd045f5e01193f7e162c4bbc193886ae348&v=4" />
     </td>
     <td>
       <b>Leandro Souza</b> <br />
