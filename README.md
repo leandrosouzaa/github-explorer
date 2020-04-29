@@ -62,7 +62,7 @@ Foram utilizadas as seguintes dependências para o desenvolvimento do projeto
 * Antes de executar o projeto é necessário instalar as dependências contidas no arquivo ```package.json```, para isso, acesse a pasta frontend dentro da raíz do projeto através do seguinte comando ```cd github-explorer/frontend``` e em seguida execute ```yarn add``` para instalar as dependências.
 * Após a conclusão da instalação, execute o script de inicio através do comando ```yarn start```.
 * Será iniciado uma nova aba em seu navegador no endereço [http://localhost:3000](http://localhost:3000). Caso não abra, digite o endereço citado em seu navegador e aguarde.
-* Para acessar o mobile da aplicação é necessário estar conenctado na mesma rede em que seu servidor local está rodando. Tendo isso em vista, descubra o IP local de sua máquina na rede e digite no navegador do seu celular o endereço de seu computador seguido pela porta utilizada pelo projeto. Ex: Se o meu IP local é 192.178.0.106, terei que digitar o o seguinte endereço em meu celular: [http://192.168.0.106:3000](http://192.168.0.106).
+* Para acessar o mobile da aplicação é necessário estar conenctado na mesma rede em que seu servidor local está rodando. Tendo isso em vista, descubra o IP local de sua máquina na rede e digite no navegador do seu celular o endereço de seu computador seguido pela porta utilizada pelo projeto. Ex: Se o meu IP local é 192.168.0.106, terei que digitar o o seguinte endereço em meu celular: [http://192.168.0.106:3000](http://192.168.0.106).
 * Caso tenha alguma dúvida, sinta-se confortável para abrir uma [issue no repositório](https://github.com/leandrosouzaa/github-explorer/issues/new).
 
 ## 👨‍💻 Desenvolvedor
@@ -78,4 +78,5 @@ Foram utilizadas as seguintes dependências para o desenvolvimento do projeto
     </td>
    </tr>
  </table>
-
+<br />
+<p align="center">Feito com 🖤 por <b>Leandro Souza</b></p>
