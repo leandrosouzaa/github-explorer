@@ -55,7 +55,7 @@ Foram utilizadas as seguintes dependências para o desenvolvimento do projeto
 * [polished @3.5.2](https://polished.js.org);
     >A lightweight toolset for writing styles in JavaScript.
     
-## 👷‍♂️ Clonagem e debug
+## 👷‍♂️ Clonagem e debug 
 * Para clonar este repositório é necessário ter instalado o Git, caso não tenha, poderá instalar através [deste tutorial](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 * Com o Git já configurado, execute o seguinte comando ```git clone https://github.com/leandrosouzaa/github-explorer.git```
 * Aguarde o término da execução deste comando. Após a clonagem será criada uma pasta chamada github-explorer contendo a aplicação.
